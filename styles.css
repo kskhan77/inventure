@@ -1,0 +1,174 @@
+/* Custom Styles for Recruiting Without Limits */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+/* Modal Animations */
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+.modal-leave-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.modal-content-enter {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+}
+
+.modal-content-enter-active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.modal-content-leave-active {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+/* Enhanced hover effects for cards */
+.hover\:shadow-lg:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus improvements */
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Custom prose styles for modal content */
+.prose {
+    max-width: none;
+    line-height: 1.6;
+}
+
+.prose h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.prose h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #374151;
+}
+
+.prose h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.prose ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.prose li {
+    margin: 0.5rem 0;
+    color: #6b7280;
+}
+
+.prose strong {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Better mobile spacing */
+    .py-16 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .md\:py-24 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Button hover improvements */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/* Enhanced button styles for the new three-button layout */
+@media (max-width: 640px) {
+    .grid-cols-1.sm\:grid-cols-3 {
+        gap: 0.75rem;
+    }
+    
+    .grid-cols-1.sm\:grid-cols-3 button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .grid-cols-1.sm\:grid-cols-3 button svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+/* Button hover effects for all colors */
+button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Specific hover effects for different button colors */
+.bg-green-600:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.bg-purple-600:hover:not(:disabled) {
+    box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
+}
+

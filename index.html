@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiting Without Limits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Container -->
+    <div class="min-h-screen flex flex-col">
+
+        <!-- Header Navigation -->
+        <header class="w-full">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="font-bold text-xl">RWL</div>
+                <nav class="hidden md:flex items-center space-x-4">
+                    <a href="#features"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Features</a>
+                    <a href="#tools"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tools</a>
+                    <a href="#"
+                        class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Log
+                        In</a>
+                    <a href="#"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">Sign
+                        Up</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn"
+                        class="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#features"
+                        class="block px-3 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md text-base font-medium">Features</a>
+                    <a href="#tools"
+                        class="block px-3 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md text-base font-medium">Tools</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md text-base font-medium">Log
+                        In</a>
+                    <a href="#"
+                        class="block px-3 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-md text-base font-medium">Sign
+                        Up</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <div class="container mx-auto px-6 py-16 md:py-24 text-center">
+
+                <!-- Hero Section -->
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold tracking-tighter leading-tight mb-4">Recruiting Without
+                        Limits.</h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-500 mb-8">Speed and Scale.</h2>
+                    <p class="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                        We're building a new model for recruitment. One that combines revenue sharing, a marketing
+                        engine,
+                        a competitive broker community, and an AI-driven learning platform. This is recruitment
+                        rewritten
+                        for the modern era.
+                    </p>
+                </div>
+
+                <!-- Divider -->
+                <div class="my-16 md:my-24 border-t border-gray-200 max-w-sm mx-auto"></div>
+
+                <!-- Future Integrations Section -->
+                <div id="features">
+                    <h3 class="text-2xl font-bold mb-2">What We're Building Next</h3>
+                    <p class="text-gray-500 mb-12 max-w-2xl mx-auto">A look at how we'll integrate community and AI to
+                        redefine the recruiting landscape.</p>
+
+                    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+
+                        <!-- Community Card -->
+                        <div
+                            class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                            <div class="flex items-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-blue-600 h-6 w-6 mr-3">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <h4 class="text-lg font-semibold">A Competitive Broker Community</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                Imagine a dynamic dashboard where brokers can track their performance on leaderboards,
+                                form teams, and share insights in dedicated forums. This fosters healthy competition and
+                                collaboration.
+                            </p>
+                        </div>
+
+                        <!-- AI Card -->
+                        <div
+                            class="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+                            <div class="flex items-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-blue-600 h-6 w-6 mr-3">
+                                    <path
+                                        d="m12 1-3.14 6.37-7.01 1.02L6.85 13.5l-1.2 7.01L12 17.3l6.35 3.22-1.2-7.01L22.15 8.4l-7.01-1.02Z">
+                                    </path>
+                                </svg>
+                                <h4 class="text-lg font-semibold">AI-Driven Learning & Matching</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                Our AI engine won't just match candidates to roles; it will empower recruiters with
+                                generative tools to create job descriptions, interview questions, and outreach emails
+                                instantly. Try a demo below.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Tools Section -->
+                <div id="tools" class="my-16 md:my-24">
+                    <div class="flex items-center justify-center gap-4 mb-4">
+                        <h3 class="text-2xl font-bold">AI-Powered Recruiting Tools</h3>
+                        <button id="helpBtn"
+                            class="text-blue-600 hover:text-blue-800 p-1 rounded-full hover:bg-blue-50 transition-colors"
+                            title="How it works">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="text-gray-500 mb-12 max-w-2xl mx-auto">Experience the future of recruitment. Fill in the
+                        details below to see how our AI can accelerate your workflow.</p>
+
+                    <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+                        <div class="mb-6">
+                            <label for="jobTitle" class="block text-sm font-medium text-gray-700 mb-2">Job Title</label>
+                            <input type="text" id="jobTitle"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="e.g., Senior Software Engineer">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="jobSkills" class="block text-sm font-medium text-gray-700 mb-2">Key Skills &
+                                Requirements</label>
+                            <textarea id="jobSkills" rows="4"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="e.g., Python, AWS, API Design, Team Leadership, 5+ years experience"></textarea>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <button id="generateDescBtn"
+                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105">
+                                📝 Job Description
+                            </button>
+                            <button id="generateResponsibilitiesBtn"
+                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105">
+                                📋 Responsibilities
+                            </button>
+                            <button id="generateQuestionsBtn"
+                                class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-200 transform hover:scale-105">
+                                ❓ Interview Questions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w-full bg-gray-50 border-t border-gray-200">
+            <div class="container mx-auto px-6 py-4 text-center text-gray-500 text-sm">
+                &copy; 2024 Recruiting Without Limits. All Rights Reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- AI Results Modal -->
+    <div id="aiModal"
+        class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 flex items-center justify-center p-4 hidden modal-enter">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] flex flex-col modal-content-enter">
+            <div class="p-6 border-b flex justify-between items-center">
+                <h3 id="modalTitle" class="text-xl font-semibold text-gray-900">AI Generated Content</h3>
+                <button id="closeModalBtn"
+                    class="text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 p-1 rounded"
+                    aria-label="Close modal">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="modalBody" class="p-6 overflow-y-auto">
+                <!-- Loading Spinner -->
+                <div id="loadingSpinner" class="flex justify-center items-center py-16">
+                    <svg class="animate-spin -ml-1 mr-3 h-8 w-8 text-blue-600" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 714 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                        </path>
+                    </svg>
+                    <span class="text-gray-600 ml-2">Generating...</span>
+                </div>
+                <!-- Content -->
+                <div id="modalContent" class="hidden prose max-w-none"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal"
+        class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg">
+            <div class="p-6 border-b flex justify-between items-center">
+                <h3 class="text-xl font-semibold text-gray-900">How AI Tools Work</h3>
+                <button id="closeHelpBtn" class="text-gray-400 hover:text-gray-600 p-1 rounded" aria-label="Close help">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-blue-100 p-2 rounded-full">
+                            <svg class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Job Description</h4>
+                            <p class="text-sm text-gray-600">Creates a complete job posting with role overview,
+                                responsibilities, requirements, and benefits.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 p-2 rounded-full">
+                            <svg class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Key Responsibilities</h4>
+                            <p class="text-sm text-gray-600">Generates 8-12 specific, actionable responsibilities
+                                tailored to the role and skills you specify.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="bg-purple-100 p-2 rounded-full">
+                            <svg class="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Interview Questions</h4>
+                            <p class="text-sm text-gray-600">Creates 10 targeted questions mixing behavioral, technical,
+                                and situational scenarios.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-900 mb-2">How to use:</h4>
+                        <ol class="text-sm text-blue-800 space-y-1">
+                            <li>1. Enter the job title (e.g., "Senior Software Engineer")</li>
+                            <li>2. List key skills and requirements</li>
+                            <li>3. Click any button to generate AI content</li>
+                            <li>4. Copy and customize the results for your needs</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Mobile menu functionality and smooth scrolling
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            // Mobile menu toggle
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', function (e) {
+                    if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+
+                // Close mobile menu when window is resized to desktop
+                window.addEventListener('resize', function () {
+                    if (window.innerWidth >= 768) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            function setupSmoothScrolling() {
+                const navLinks = document.querySelectorAll('a[href^="#"]');
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+
+                        // Skip if href is just '#'
+                        if (href === '#') return;
+
+                        e.preventDefault();
+
+                        const targetId = href.substring(1);
+                        const targetElement = document.getElementById(targetId);
+
+                        if (targetElement) {
+                            // Close mobile menu if open
+                            if (mobileMenu) {
+                                mobileMenu.classList.add('hidden');
+                            }
+
+                            // Calculate offset for fixed header
+                            const headerHeight = document.querySelector('header').offsetHeight;
+                            const targetPosition = targetElement.offsetTop - headerHeight - 20;
+
+                            // Smooth scroll to target
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+
+            // Initialize smooth scrolling
+            setupSmoothScrolling();
+
+            // Add active state to navigation links based on scroll position
+            function updateActiveNavigation() {
+                const sections = document.querySelectorAll('[id="features"], [id="tools"]');
+                const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+                let current = '';
+                const headerHeight = document.querySelector('header').offsetHeight;
+
+                sections.forEach(section => {
+                    if (section.id) {
+                        const sectionTop = section.offsetTop - headerHeight - 50;
+                        const sectionHeight = section.offsetHeight;
+
+                        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                            current = section.id;
+                        }
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === '#features' || href === '#tools') {
+                        link.classList.remove('text-blue-600');
+                        link.classList.add('text-gray-600');
+
+                        if (href === `#${current}`) {
+                            link.classList.remove('text-gray-600');
+                            link.classList.add('text-blue-600');
+                        }
+                    }
+                });
+            }
+
+            // Update active navigation on scroll
+            window.addEventListener('scroll', updateActiveNavigation);
+
+            // Initial check
+            updateActiveNavigation();
+        });
+    </script>
+</body>
+
+</html>
